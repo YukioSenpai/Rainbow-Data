@@ -1,0 +1,32 @@
+
+<div *ngIf="infos">
+
+   <h3 class="text-center">LinkedIn informations</h3><br><br>
+<div class="container">
+
+   <table class="table">
+      <thead>
+         <tr>
+            <th>Prenom / Nom</th>
+            <th>Email</th>
+            <th>Domaine professionnel</th>
+            <th>Localisation</th>
+            <th>Entreprise / Employeur</th>
+            <th>Statut actuel</th>
+         </tr>
+      </thead>
+      <tbody>
+         <tr>
+            <td><span *ngIf="infos.formattedName">{{infos.formattedName}}</span></td>
+            <td><span *ngIf="infos.emailAddress">{{infos.emailAddress}}</span></td>
+            <td><span *ngIf="infos.industry">{{infos.industry}}</span></td>
+            <td><span *ngIf="infos.location">{{infos.location.name}}</span></td>
+            <td><span *ngIf="infos.positions">{{infos.positions.values[0].company.name}}</span></td>
+            <td><span *ngIf="infos.positions">{{infos.positions.values[0].title}}</span></td>
+         </tr>
+      </tbody>
+   </table>
+
+
+</div>
+</div>

@@ -1,0 +1,20 @@
+
+#image{
+    margin-left: auto;
+    margin-right: auto;
+    width:195px;
+    height:195px;
+    z-index:5;
+    background:url('rainbowtry.png');
+    animation: bounce 0.35s ease infinite alternate;
+}
+
+@keyframes bounce{
+     from {transform: translateY(0);}
+     to   {transform: translateY(-28px);}
+}
+
+.checkbox{
+    text-align: center;
+    vertical-align: middle;
+}

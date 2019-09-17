@@ -1,0 +1,8 @@
+{
+   "client_id":      "77k2mroh7b230y",
+   "client_secret":  "OUEd2HDTSBk45ZNg",
+   "scope":          "r_basicprofile,r_emailaddress",
+   "redirect_uri":   "http://localhost:3000/",
+   "fields" :        "formatted-name,industry,location,positions,email-address",
+   "state" :         "987654321"
+}

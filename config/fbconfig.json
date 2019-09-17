@@ -1,0 +1,7 @@
+{
+   "client_id":      "320802311671510",
+   "client_secret":  "72e1096cd5b8380a83db8c74db879857",
+   "scope":          "user_about_me,user_birthday,email,user_location,user_education_history,user_work_history",
+   "redirect_uri":   "http://localhost:3000/",
+   "fields" :        "['name','birthday','email','location','education','work']"
+}

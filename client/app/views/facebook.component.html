@@ -1,0 +1,33 @@
+
+<div *ngIf="infos">
+
+   <h3 class="text-center">Facebook informations</h3><br><br>
+<div class="container">
+
+   <table class="table">
+      <thead>
+         <tr>
+            <th>Prenom / Nom</th>
+            <th>Date de naissance</th>
+            <th>Email</th>
+            <th>Ville</th>
+            <th>Etudes</th>
+            <th>Emploi</th>
+         </tr>
+      </thead>
+      <tbody>
+         <tr>
+            <td><span *ngIf="infos.name">{{infos.name}}</span></td>
+            <td><span *ngIf="infos.birthday">{{infos.birthday}}</span></td>
+            <td><span *ngIf="infos.email">{{infos.email}}</span></td>
+            <td><span *ngIf="infos.location">{{infos.location.name}}</span></td>
+            <td><span *ngIf="infos.education">- {{infos.education[1].school.name}}</span>
+            <tr><span *ngIf="infos.education">- {{infos.education[0].school.name}}</span></tr></td>
+            <td><span *ngIf="infos.work">{{infos.work[0].employer.name}}</span></td>
+         </tr>
+      </tbody>
+   </table>
+
+
+</div>
+</div>
